@@ -22,3 +22,14 @@
 # Available Virtual  : 23889 MB
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/tb_riscv_pipeline_behav.wcfg
+source tb_riscv_pipeline.tcl
+run 250 ns
+run 250 ns
+run 250 ns
+save_wave_config {C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/tb_riscv_pipeline_behav.wcfg}
+close_sim
