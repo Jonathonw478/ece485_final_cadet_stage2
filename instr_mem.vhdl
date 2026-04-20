@@ -33,7 +33,7 @@ architecture Behavioral of instr_mem is
         16 => x"00000000", -- NOP
         17 => x"00000000", -- NOP
         18 => x"00000000", -- NOP 
-        19 => x"F00298E3", -- bne x5, x0, loop  
+        19 => x"F20291E3", -- bne x5, x0, loop  
         20 => x"00000000", -- NOP
         21 => x"00000000", -- NOP
         22 => x"00000000", -- NOP  
@@ -42,10 +42,11 @@ architecture Behavioral of instr_mem is
     );
     
 -- bne
--- imm = 64 = 000000111000 = 2 complement 111111001000
--- imm = 64 = 000010000000 = 2 complement 1111110000000 shifted
--- 1 111|100 0|0000 |0010|1 001 |0000 |1 110|0011|
--- 0xF80290E3
+-- imm = 64 = 000000110100 = 2 complement 111111001100
+-- imm = 64 = 000001101000 = 2 complement 111110011000 shifted
+-- 1 111|001 0|0000 |0010|1 001 |0100 |1 110|0011|
+
+-- 0xF20291E3 ... somehow this is the correct number? the above math is off for some reason.
 
 -- imm = 56 = 000001110000 = 111110010000
 -- 1 111|001 0|0000 | 0010|1 001 |0000 |1 110|0011|

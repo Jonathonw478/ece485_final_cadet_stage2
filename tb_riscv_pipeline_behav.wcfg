@@ -10,12 +10,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,411.309 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,651.766 ns"></ZoomEndTime>
-      <Cursor1Time time="1,750.000 ns"></Cursor1Time>
+      <ZoomStartTime time="1,404.780 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,716.095 ns"></ZoomEndTime>
+      <Cursor1Time time="55.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="153"></NameColumnWidth>
+      <NameColumnWidth column_width="145"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="37" />
@@ -89,6 +89,7 @@
    <wvobject fp_name="/tb_riscv_pipeline/uut/mem_wb_rd" type="array">
       <obj_property name="ElementShortName">mem_wb_rd[4:0]</obj_property>
       <obj_property name="ObjectShortName">mem_wb_rd[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_riscv_pipeline/uut/wb_data" type="array">
       <obj_property name="ElementShortName">wb_data[31:0]</obj_property>

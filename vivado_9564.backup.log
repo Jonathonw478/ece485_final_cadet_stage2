@@ -1,22 +1,176 @@
 #-----------------------------------------------------------
-# Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Mar 10 10:08:28 2026
-# Process ID: 21020
-# Current directory: C:/Users/george.york/Documents/ECE485_code/ece485_final_cadet_stage2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12468 C:\Users\george.york\Documents\ECE485_code\ece485_final_cadet_stage2\ece485_final_cadet_stage2.xpr
-# Log file: C:/Users/george.york/Documents/ECE485_code/ece485_final_cadet_stage2/vivado.log
-# Journal file: C:/Users/george.york/Documents/ECE485_code/ece485_final_cadet_stage2\vivado.jou
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Apr  7 14:50:44 2026
+# Process ID         : 9564
+# Current directory  : C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent46144 C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\ece485_final_cadet_stage2.xpr
+# Log file           : C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/vivado.log
+# Journal file       : C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2\vivado.jou
+# Running On         : Jonathon-Razer-Laptop
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i9-11900H @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34095 MB
+# Swap memory        : 9663 MB
+# Total Virtual      : 43759 MB
+# Available Virtual  : 23889 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/george.york/Documents/ECE485_code/ece485_final_cadet_stage2/ece485_final_cadet_stage2.xpr
+open_project C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/george.york/Documents/ECE485_code/ece485_final_cadet_stage2' since last save.
 Scanning sources...
 Finished scanning sources
+INFO: [Project 1-230] Project 'ece485_final_cadet_stage2.xpr' upgraded for this version of Vivado.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 779.578 ; gain = 56.863
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2024.2/data/ip'.
+upgrade_project -migrate_output_products
 update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_riscv_pipeline'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx2/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv_pipeline' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_riscv_pipeline_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/alu.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/alu_control.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/control_unit.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_mem'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/immediate_generator.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'immediate_generator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/instr_mem.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'instr_mem'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/pc.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pc_live'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/pipeline_registers.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pipeline_registers'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/reg_file.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_file'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'riscv_pipeline'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/tb_riscv_pipeline.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_riscv_pipeline'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_riscv_pipeline_behav xil_defaultlib.tb_riscv_pipeline -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx2/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_riscv_pipeline_behav xil_defaultlib.tb_riscv_pipeline -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.pc_live [pc_live_default]
+Compiling architecture behavioral of entity xil_defaultlib.pipeline_registers [pipeline_registers_default]
+Compiling architecture behavioral of entity xil_defaultlib.instr_mem [instr_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_control [alu_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_file [reg_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.immediate_generator [immediate_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_mem [data_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.riscv_pipeline [riscv_pipeline_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_riscv_pipeline
+Built simulation snapshot tb_riscv_pipeline_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_pipeline_behav -key {Behavioral:sim_1:Functional:tb_riscv_pipeline} -tclbatch {tb_riscv_pipeline.tcl} -view {C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/tb_riscv_pipeline_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/tb_riscv_pipeline_behav.wcfg
+source tb_riscv_pipeline.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_pipeline_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1155.465 ; gain = 19.652
+run 250 ns
+run 250 ns
+run 250 ns
+save_wave_config {C:/Users/jswat/Downloads/ECE485_FinalProject/ece485_final_cadet_stage2/tb_riscv_pipeline_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\pipeline_registers.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\instr_mem.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\jswat\Downloads\ECE485_FinalProject\ece485_final_cadet_stage2\riscv_pipeline.vhdl:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 10 10:34:51 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 14:52:52 2026...

@@ -7,23 +7,41 @@ entity pipeline_registers is
     Port (
         clk         : in  STD_LOGIC;
         reset       : in  STD_LOGIC;
+        -- inputs from IF stage
+        reg_write : in STD_LOGIC;
+        alu_src : in STD_LOGIC;
+        mem_read : in STD_LOGIC;
+        mem_write : in STD_LOGIC;
+        branch : in STD_LOGIC;
+        jump : in STD_LOGIC;
+        load_addr : in STD_LOGIC;
+        instr : in  STD_LOGIC_VECTOR(31 downto 0);
+        npc    : in  STD_LOGIC_VECTOR(31 downto 0);
+        rd    : in STD_LOGIC_VECTOR(4 downto 0);
+        --if_id_reg1_data  : in  STD_LOGIC_VECTOR(31 downto 0);
+        --if_id_reg2_data  : in  STD_LOGIC_VECTOR(31 downto 0);
+        --if_id_imm        : in  STD_LOGIC_VECTOR(31 downto 0);
+        alu_op : in STD_LOGIC_VECTOR(3 downto 0);
+
         -- IF/ID pipeline registers
-        if_id_reg_write : in STD_LOGIC;
-        if_id_alu_src : in STD_LOGIC;
-        if_id_mem_read : in STD_LOGIC;
-        if_id_mem_write : in STD_LOGIC;
-        if_id_branch : in STD_LOGIC;
-        if_id_jump : in STD_LOGIC;
-        if_id_load_addr : in STD_LOGIC;
-        if_id_instr : in  STD_LOGIC_VECTOR(31 downto 0);
-        -- <add other if_id registers>
-        if_id_rd  : in STD_LOGIC_VECTOR(4 downto 0);
-        if_id_alu_op : in STD_LOGIC_VECTOR(3 downto 0);
-        if_id_npc : in STD_LOGIC_VECTOR(31 downto 0);
+        if_id_reg_write : inout STD_LOGIC;
+        if_id_alu_src : inout STD_LOGIC;
+        if_id_mem_read : inout STD_LOGIC;
+        if_id_mem_write : inout STD_LOGIC;
+        if_id_branch : inout STD_LOGIC;
+        if_id_jump : inout STD_LOGIC;
+        if_id_load_addr : inout STD_LOGIC;
+        if_id_instr : inout  STD_LOGIC_VECTOR(31 downto 0);
+        if_id_npc    : inout  STD_LOGIC_VECTOR(31 downto 0);
+        if_id_rd    : inout STD_LOGIC_VECTOR(4 downto 0);
+        
         if_id_reg1_data  : in  STD_LOGIC_VECTOR(31 downto 0);
         if_id_reg2_data  : in  STD_LOGIC_VECTOR(31 downto 0);
-        if_id_imm : STD_LOGIC_VECTOR(31 downto 0);
+        if_id_imm        : in  STD_LOGIC_VECTOR(31 downto 0);
         
+        if_id_alu_op : inout STD_LOGIC_VECTOR(3 downto 0);
+
+
         -- ID/EX pipeline registers
         id_ex_reg_write : inout STD_LOGIC;
         id_ex_alu_src : inout STD_LOGIC;
@@ -40,7 +58,7 @@ entity pipeline_registers is
         id_ex_alu_op : inout STD_LOGIC_VECTOR(3 downto 0);
         id_ex_npc : inout STD_LOGIC_VECTOR(31 downto 0);
         id_ex_rd : inout STD_LOGIC_VECTOR(4 downto 0);
-        alu_result_in : in STD_LOGIC_VECTOR(31 downto 0);
+        id_ex_alu_result : in STD_LOGIC_VECTOR(31 downto 0);
         
         -- EX/MEM pipeline registers
         ex_mem_reg_write : inout STD_LOGIC;
@@ -50,9 +68,9 @@ entity pipeline_registers is
         ex_mem_branch : out STD_LOGIC;
         ex_mem_jump : out STD_LOGIC;
         ex_mem_load_addr : inout STD_LOGIC;
-        ex_mem_reg1_data : inout STD_LOGIC_VECTOR(31 downto 0); 
+        ex_mem_reg1_data : out STD_LOGIC_VECTOR(31 downto 0); 
         -- <add other ex_mem registers>
-        ex_mem_reg2_data : inout STD_LOGIC_VECTOR(31 downto 0);
+        ex_mem_reg2_data : out STD_LOGIC_VECTOR(31 downto 0);
         ex_mem_alu_result : inout STD_LOGIC_VECTOR(31 downto 0);
         ex_mem_npc : inout STD_LOGIC_VECTOR(31 downto 0);
         ex_mem_imm : inout STD_LOGIC_VECTOR(31 downto 0);
@@ -79,6 +97,18 @@ begin
     process(clk, reset)
     begin
         if reset = '1' then
+            if_id_reg_write <= '0';
+            if_id_alu_src <= '0';
+            if_id_mem_read <= '0';
+            if_id_mem_write <= '0';
+            if_id_branch <= '0';
+            if_id_jump <= '0';
+            if_id_load_addr <= '0';
+            if_id_instr <= (others => '0');
+            if_id_npc    <= (others => '0');
+            if_id_rd   <= (others => '0');
+            if_id_alu_op <= (others => '0');
+
                 -- ID/EX Stage
             id_ex_reg_write <= '0';
             id_ex_alu_src <= '0';
@@ -121,6 +151,19 @@ begin
             mem_wb_rd <= (others => '0');
             
         elsif rising_edge(clk) then
+            if_id_reg_write <= reg_write;
+            if_id_alu_src <= alu_src;
+            if_id_mem_read <= mem_read;
+            if_id_mem_write <= mem_write;
+            if_id_branch <= branch;
+            if_id_jump <= jump;
+            if_id_load_addr <= load_addr;
+            if_id_instr <= instr;
+            if_id_npc <= npc;
+            if_id_rd  <= rd;
+            
+            if_id_alu_op <= alu_op;
+
             -- ID/EX <- IF/ID
             id_ex_reg_write <= if_id_reg_write;   
             id_ex_alu_src <= if_id_alu_src;
@@ -129,13 +172,14 @@ begin
             id_ex_branch <= if_id_branch;
             id_ex_jump <= if_id_jump;
             id_ex_load_addr <= if_id_load_addr;
+            id_ex_rd    <= if_id_rd;      
             id_ex_instr <= if_id_instr;
+            id_ex_npc    <= if_id_npc;
+            id_ex_reg1_data  <= if_id_reg1_data;
+            id_ex_reg2_data  <= if_id_reg2_data;
+            id_ex_imm  <= if_id_imm;
             id_ex_alu_op <= if_id_alu_op;
-            id_ex_npc <= if_id_npc;
-            id_ex_reg1_data <= if_id_reg1_data;
-            id_ex_reg2_data <= if_id_reg2_data;
-            id_ex_imm <= if_id_imm;
-            id_ex_rd <= if_id_rd;
+
             
             -- EX/MEM <- ID/EX
             ex_mem_reg_write <= id_ex_reg_write;
@@ -150,7 +194,7 @@ begin
             ex_mem_npc <= id_ex_npc;
             ex_mem_imm <= id_ex_imm;
             ex_mem_rd <= id_ex_rd;
-            ex_mem_alu_result <= alu_result_in;
+            ex_mem_alu_result <= id_ex_alu_result;
             
             -- MEM/WB <- EX/MEM ------ Do I need branch and jump?
             mem_wb_reg_write <= ex_mem_reg_write;

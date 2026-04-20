@@ -1,0 +1,505 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Apr 18 12:50:03 2026
+# Process ID         : 25560
+# Current directory  : C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.runs/synth_1
+# Command line       : vivado.exe -log riscv_pipeline.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_pipeline.tcl
+# Log file           : C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.runs/synth_1/riscv_pipeline.vds
+# Journal file       : C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.runs/synth_1\vivado.jou
+# Running On         : Jonathon-Razer-Laptop
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i9-11900H @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34095 MB
+# Swap memory        : 8321 MB
+# Total Virtual      : 42417 MB
+# Available Virtual  : 25678 MB
+#-----------------------------------------------------------
+source riscv_pipeline.tcl -notrace
+Command: synth_design -top riscv_pipeline -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25632
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 769.109 ; gain = 480.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'riscv_pipeline' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:27]
+INFO: [Synth 8-3491] module 'pc_live' declared at 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/pc.vhdl:6' bound to instance 'pc_inst' of component 'pc_live' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:244]
+INFO: [Synth 8-638] synthesizing module 'pc_live' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/pc.vhdl:15]
+INFO: [Synth 8-256] done synthesizing module 'pc_live' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/pc.vhdl:15]
+INFO: [Synth 8-3491] module 'pipeline_registers' declared at 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/pipeline_registers.vhdl:6' bound to instance 'pipe_reg' of component 'pipeline_registers' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:255]
+INFO: [Synth 8-638] synthesizing module 'pipeline_registers' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/pipeline_registers.vhdl:77]
+INFO: [Synth 8-256] done synthesizing module 'pipeline_registers' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/pipeline_registers.vhdl:77]
+INFO: [Synth 8-3491] module 'instr_mem' declared at 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/instr_mem.vhdl:5' bound to instance 'instr_mem_inst' of component 'instr_mem' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:326]
+INFO: [Synth 8-638] synthesizing module 'instr_mem' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/instr_mem.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'instr_mem' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/instr_mem.vhdl:14]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/control_unit.vhdl:6' bound to instance 'control_unit_inst' of component 'control_unit' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:352]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/control_unit.vhdl:19]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/control_unit.vhdl:19]
+INFO: [Synth 8-3491] module 'alu_control' declared at 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/alu_control.vhdl:6' bound to instance 'alu_control_inst' of component 'alu_control' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:372]
+INFO: [Synth 8-638] synthesizing module 'alu_control' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/alu_control.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'alu_control' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/alu_control.vhdl:14]
+INFO: [Synth 8-3491] module 'reg_file' declared at 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/reg_file.vhdl:6' bound to instance 'reg_file_inst' of component 'reg_file' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:382]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/reg_file.vhdl:19]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/reg_file.vhdl:19]
+INFO: [Synth 8-3491] module 'immediate_generator' declared at 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/immediate_generator.vhdl:6' bound to instance 'immediate_generator_inst' of component 'immediate_generator' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:397]
+INFO: [Synth 8-638] synthesizing module 'immediate_generator' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/immediate_generator.vhdl:13]
+INFO: [Synth 8-256] done synthesizing module 'immediate_generator' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/immediate_generator.vhdl:13]
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/alu.vhdl:6' bound to instance 'alu_inst' of component 'alu' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:413]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/alu.vhdl:15]
+INFO: [Synth 8-256] done synthesizing module 'alu' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/alu.vhdl:15]
+INFO: [Synth 8-3491] module 'data_mem' declared at 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:6' bound to instance 'data_mem_inst' of component 'data_mem' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:427]
+INFO: [Synth 8-638] synthesizing module 'data_mem' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:16]
+WARNING: [Synth 8-614] signal 'memory' is read in the process but is not in the sensitivity list [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:25]
+INFO: [Synth 8-256] done synthesizing module 'data_mem' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:16]
+INFO: [Synth 8-256] done synthesizing module 'riscv_pipeline' (0#1) [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:27]
+WARNING: [Synth 8-6014] Unused sequential element clock_counter_reg was removed.  [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/riscv_pipeline.vhdl:235]
+WARNING: [Synth 8-7129] Port addr[31] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[6] in module alu_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[5] in module alu_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[4] in module alu_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[3] in module alu_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[2] in module alu_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[1] in module alu_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[0] in module alu_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[31] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module instr_mem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 905.195 ; gain = 616.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 905.195 ; gain = 616.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 905.195 ; gain = 616.770
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[0]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[1]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[2]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[3]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[4]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[5]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[6]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[7]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[8]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[9]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[10]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[11]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[12]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[13]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[14]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[15]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[16]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[17]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[18]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[19]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[20]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[21]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[22]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[23]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[24]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[25]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[26]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[27]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[28]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[29]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[30]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[31]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[32]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[33]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[34]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[35]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[36]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[37]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[38]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[39]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[40]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[41]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[42]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[43]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[44]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[45]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[46]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[47]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[48]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[49]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[50]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[51]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[52]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[53]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[54]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[55]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[56]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[57]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[58]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[59]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[60]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[61]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[62]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[63]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[64]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[65]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[66]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[67]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[68]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[69]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[70]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[71]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[72]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[73]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[74]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[75]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[76]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[77]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[78]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[79]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[80]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[81]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[82]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[83]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[84]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[85]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[86]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[87]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[88]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[89]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[90]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[91]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[92]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[93]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[94]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[95]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[96]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[97]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[98]' [C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/data_mem.vhdl:28]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 926.613 ; gain = 638.188
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 46    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	 257 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 11    
+	   2 Input    1 Bit        Muxes := 38    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port addr[31] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[31]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[30]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[29]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[28]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[27]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[26]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[25]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[24]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[23]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[22]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[21]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[20]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[19]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[18]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[17]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[16]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[15]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[14]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[13]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[12]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[11]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[10]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[9]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[8]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[7]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[6]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[5]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[4]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[3]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[2]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[1]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[0]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][31]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][30]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][29]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][28]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][27]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][26]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][25]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][24]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][23]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][22]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][21]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][20]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][19]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][18]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][17]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][16]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][15]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][14]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][13]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][12]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][11]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][10]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][9]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][8]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][7]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][6]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][5]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][4]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][3]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][2]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][1]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][0]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][31]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][30]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][29]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][28]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][27]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][26]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][25]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][24]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][23]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][22]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][21]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][20]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][19]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][18]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][17]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][16]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][15]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][14]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][13]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][12]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][11]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][10]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][9]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][8]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][7]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][6]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][5]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][4]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][3]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][2]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][1]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[1][0]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[2][31]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[2][30]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[2][29]) is unused and will be removed from module data_mem.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[2][28]) is unused and will be removed from module data_mem.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1095.379 ; gain = 806.953
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1111.184 ; gain = 822.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1111.184 ; gain = 822.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1302.809 ; gain = 1014.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1302.809 ; gain = 1014.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1302.809 ; gain = 1014.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1302.809 ; gain = 1014.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1302.809 ; gain = 1014.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1302.809 ; gain = 1014.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1302.809 ; gain = 1014.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8596 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1302.809 ; gain = 1014.383
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1302.809 ; gain = 1014.383
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1302.840 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1432.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1421fefa
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 282 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.863 ; gain = 1146.453
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jswat/School_Projects/ECE485_FinalProject/ece485_final_cadet_stage2/ece485_final_cadet_stage2.runs/synth_1/riscv_pipeline.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file riscv_pipeline_utilization_synth.rpt -pb riscv_pipeline_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 18 12:50:36 2026...
